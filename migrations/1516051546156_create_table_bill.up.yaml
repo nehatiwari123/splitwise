@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "bill"("group_id" integer NOT NULL, "paid_by_user_id" integer
+      NOT NULL, "description" text NOT NULL, "amount_paid" numeric NOT NULL, "split_equally"
+      boolean NOT NULL, "attachment" text NOT NULL, PRIMARY KEY ("group_id") )
+  type: run_sql
+- args:
+    name: bill
+  type: add_existing_table_or_view

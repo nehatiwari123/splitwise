@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "Groups"("group_id" integer NOT NULL, "group_name" text NOT
+      NULL, "member_user_id_1" text NOT NULL, "member_user_id_2" text NOT NULL, "member_user_id_3"
+      text NOT NULL, "member_user_id_4" text NOT NULL, PRIMARY KEY ("group_id") )
+  type: run_sql
+- args:
+    name: Groups
+  type: add_existing_table_or_view
