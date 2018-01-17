@@ -52,7 +52,7 @@ session:
 # Configuration related to the email provider
 email:
   # email address of the sender for verification emails
-  verifyEmailFrom: getstarteduser@hasura.io
+  verifyEmailFrom: nehatiwari.csk@gmail.com
   # Name of the sender for verification emails
   verifEmailFromName: admin
   # Subject for verification emails

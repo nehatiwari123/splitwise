@@ -7,8 +7,7 @@
 
 email:
   # default can take values 'smtp', 'sparkPost' or 'mandrill'
-  default: null
-  providers:
+  default: smtp  providers:
     hasura:
       authToken:
         secretKeyRef:
@@ -20,13 +19,12 @@ email:
           key: notify.mandrill.key
           name: hasura-secrets
     smtp:
-      hostname: ""
+      hostname: smtp.gmail.com
       password:
         secretKeyRef:
           key: notify.smtp.password
           name: hasura-secrets
-      port: 465
-      username:
+      port: 465      username:
         secretKeyRef:
           key: notify.smtp.username
           name: hasura-secrets
